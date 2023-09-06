@@ -48,7 +48,6 @@
     "flowbite-typography": "^1.0.3",
     "mqtt": "^5.0.4",
     "tailwind-merge": "^1.14.0",
-    "u8-mqtt": "^0.5.3",
     "values.js": "^2.1.1"
   }
 }
