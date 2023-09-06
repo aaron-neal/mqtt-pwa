@@ -20,7 +20,7 @@ const config = {
       precompress: false
     }),
     paths: {
-      base: dev ? '' : '/svelte-flowbite-boilerplate'
+      base: dev ? '' : '/mqtt-pwa'
     }
   },
 };

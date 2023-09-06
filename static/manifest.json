@@ -1,7 +1,7 @@
 {
-  "short_name": "retech-app",
-  "name": "CELEST retech boilerplate app",
-  "start_url": "https://sroehrl.github.io/svelte-flowbite-boilerplate/",
+  "short_name": "MQTT-PWA",
+  "name": "PWA to connect over MQTT",
+  "start_url": "https://aaron-neal.github.io/mqtt-pwa/",
   "icons": [
     {
       "src": "icon-512x512.png",
@@ -16,8 +16,8 @@
   ],
   "background_color": "#546dd2",
   "display": "standalone",
-  "scope": "/svelte-flowbite-boilerplate/",
+  "scope": "/",
   "theme_color": "#546dd2",
   "shortcuts": [],
-  "description": "Edit this information in static/maifest.json"
+  "description": "PWA app that connects over MQTT and sends a message"
 }
