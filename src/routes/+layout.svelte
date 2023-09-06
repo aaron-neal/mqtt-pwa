@@ -11,10 +11,10 @@
       <a href={base}> </a>
     </span>
     </NavBrand>
-    <NavHamburger on:click={toggle} />
+    <!-- <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
         <NavLi>INSTALL</NavLi>
-    </NavUl>
+    </NavUl> -->
 </Navbar>
 <div class="mt-5 w-4/5 mx-auto">
 <slot />
