@@ -22,7 +22,7 @@
     //     )
     // }
 
-    const client = mqtt.connect('wss://workbench.exinetechnology.com:1884',{username:'admin', password:'QN5BsvuHGSuL5F'})
+    const client = mqtt.connect('ws://swallowhouse.duckdns.org:1884',{username:'swalmqtt', password:'mqtt1973'})
 
     let connected = false
     let error = false
@@ -32,7 +32,7 @@
         error = false;
         setTimeout(function(){
             connected = true;
-            client.subscribe("u8-mqtt/demo-simple/:topic", (err) => {
+            client.subscribe("cmnd/gate", (err) => {
                 if (!err) {
                     
                 }
@@ -47,6 +47,11 @@
     });
 
     client.on("close", () => {
+        retryCount++;
+        if(retryCount > 3){
+            client.end();
+            error = true;
+        }
         console.log("MQTT connection closed");
         connected = false
     });
@@ -67,7 +72,7 @@
     }
 
     function send(){
-        client.publish("u8-mqtt/demo-simple/live", "Hello mqtt");
+        client.publish("cmnd/gate", "open");
     }
 </script>
 
