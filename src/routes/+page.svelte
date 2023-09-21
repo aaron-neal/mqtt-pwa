@@ -4,7 +4,10 @@
     import { Shadow } from 'svelte-loading-spinners';
     import * as mqtt from 'mqtt/dist/mqtt.min'
 
-    const client = mqtt.connect('wss://3ways.aaronneal.co.uk:1884',{username:'homeassistant', password:'RniR9giMBhkmSU'})
+    let broker = '3ways.aaronneal.co.uk'
+    let port = 1884
+
+    const client = mqtt.connect(`wss://${broker}:${port}`,{username:'homeassistant', password:'RniR9giMBhkmSU'})
 
     let connected = false
     let error = false
@@ -68,6 +71,7 @@
 
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Your ultimate door opening app</h1>
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Wait for a connection and then open the door!</p>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Broker: {broker}</p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-col sm:justify-center sm:space-y-0 sm:space-x-4">
             {#if !connected && !error}
                 <div class="spinner-item">
