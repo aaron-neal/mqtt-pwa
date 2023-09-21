@@ -2,27 +2,9 @@
     import {Card} from "flowbite-svelte";
     import {base} from "$app/paths";
     import { Shadow } from 'svelte-loading-spinners';
-    // import * as mqtt from 'mqtt'
     import * as mqtt from 'mqtt/dist/mqtt.min'
-    // import mqtt_client from 'u8-mqtt'
 
-    // let my_mqtt = mqtt_client()
-    // .with_websock('wss://workbench.exinetechnology.com:1884')
-    // .with_autoreconnect()
-
-    // async function connect(){
-    //     my_mqtt.connect({username:'admin', password:'QN5BsvuHGSuL5F'});
-    //     my_mqtt.subscribe_topic('u8-mqtt/demo-simple/:topic',(pkt, params, ctx) => {
-    //         console.log('topic packet', params, pkt, pkt.json())
-    //     })
-
-    // await my_mqtt.json_send('u8-mqtt/demo-simple/live',
-    //     { note: 'from README example',
-    //     live: new Date().toISOString() }
-    //     )
-    // }
-
-    const client = mqtt.connect('ws://swallowhouse.duckdns.org:1884',{username:'swalmqtt', password:'mqtt1973'})
+    const client = mqtt.connect('wss://3ways.aaronneal.co.uk:1884',{username:'homeassistant', password:'RniR9giMBhkmSU'})
 
     let connected = false
     let error = false

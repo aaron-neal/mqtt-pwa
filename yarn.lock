@@ -1541,11 +1541,6 @@ typescript@^5.0.0, typescript@^5.0.3, "typescript@>=3.9.5 || ^4.0.0 || ^5.0.0":
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.1.6.tgz"
   integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
-u8-mqtt@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/u8-mqtt/-/u8-mqtt-0.5.3.tgz"
-  integrity sha512-C9eaN2/kxtmMhLVrKT8Yk6a3pRj12K+nNpylDqUn/rKYwAaMEUnvXNWqd4QMd/EaKKcMxpeA9cyCU8DlUOvKsw==
-
 undici@~5.23.0:
   version "5.23.0"
   resolved "https://registry.npmjs.org/undici/-/undici-5.23.0.tgz"
