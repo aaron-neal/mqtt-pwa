@@ -14,11 +14,11 @@
         error = false;
         setTimeout(function(){
             connected = true;
-            client.subscribe("cmnd/gate", (err) => {
-                if (!err) {
+            // client.subscribe("cmnd/gate", (err) => {
+            //     if (!err) {
                     
-                }
-            });
+            //     }
+            // });
         }, 2000)
     });
 
